@@ -46,6 +46,22 @@ a {
     cursor: pointer;
 }
 
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -0.02em;
+}
+
+.section-desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -214,7 +230,7 @@ a {
     line-height: 1.66; /* 166.667% */
 }
 
-.hero__media{
+.hero__media {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
@@ -225,7 +241,7 @@ a {
     align-items: center;
 }
 
-.hero__img{
+.hero__img {
     object-fit: cover;
     object-position: center;
 }
@@ -243,4 +259,87 @@ a {
     width: 210px;
     height: 410px;
     border-radius: 0px 6px 6px 0px;
+}
+
+/* Service */
+
+.service {
+    margin-top: 170px;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 468px;
+}
+
+.service-row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.service-item {
+    width: 470px;
+    display: flex;
+    padding: 22px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+    color: #FFFFFF;
+    background: #2E80CE;
+}
+
+.service-item__icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+    color: #10375c;
+}
+
+.service-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.service-item__btn {
+    margin-top: 55px;
 }
