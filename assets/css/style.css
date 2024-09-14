@@ -25,6 +25,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn {
@@ -60,6 +61,31 @@ a {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.66; /* 166.667% */
+}
+
+.control {
+    display: flex;
+    gap: 18px;
+}
+
+.control__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+    border: 1px solid #575f66;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    color: #575f66;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    background: #2e80ce;
+    color: #fff;
+    border-color: #2e80ce;
+    cursor: pointer;
 }
 
 /* Header */
@@ -296,7 +322,7 @@ a {
     padding: 22px;
     border-radius: 10px;
     background: #fff;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .service-item:hover {
@@ -464,6 +490,10 @@ a {
     gap: 30px;
 }
 
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+
 .member-item__img-bg {
     position: relative;
     border-radius: 6px;
@@ -480,6 +510,7 @@ a {
     height: 290px;
     max-width: 100%;
     bottom: 0px;
+    transition: 0.3s;
 }
 
 .member-item__name {
@@ -500,28 +531,167 @@ a {
 }
 
 .member__control {
-    margin-top: 38px;
-    display: flex;
     justify-content: center;
-    gap: 18px;
+    margin-top: 38px;
 }
 
-.member__control-btn {
+/* Install */
+.install {
+    margin-top: 265px;
+}
+
+.install__inner {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 36px;
-    border: 1px solid #575f66;
-    width: 36px;
-    height: 36px;
-    background: #fff;
-    color: #575F66;
-    transition: 0.25s;
+    justify-content: space-between;
+    padding: 0 70px;
+    border-radius: 4px;
+    background: #2e80ce;
 }
 
-.member__control-btn:hover{
-    background: #2E80CE;
+.install__img {
+    margin-top: -95px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.install__content {
+    width: 57%;
+}
+
+.install__desc,
+.install__heading {
     color: #fff;
-    border-color: #2E80CE;
-    cursor: pointer
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+/* News */
+.news {
+    margin-top: 170px;
+}
+
+.news__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__content {
+    flex-shrink: 0;
+    width: 40%;
+}
+
+.news__heading {
+    /* width: 470px; */
+}
+
+.news__more {
+    margin: 28px 0;
+    color: #10375c;
+    font-family: Inter, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.55; /* 155.556% */
+    text-decoration-line: underline;
+}
+
+.news__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 48.7%;
+    column-gap: 30px;
+}
+
+.news-item {
+    width: 270px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.news-item__thumb {
+    height: 172px;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-item__body {
+    padding: 18px 22px 21px;
+}
+
+.news-item__heading {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.62; /* 162.5% */
+}
+
+.news-item__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71; /* 171.429% */
+}
+
+.news-item__more {
+    display: block;
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* Appointment */
+
+.appointment {
+    margin-top: 170px;
+}
+
+.appointment__inner {
+    background: #f6fbff;
+    padding: 100px 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointment__heading {
+    text-align: center;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: block;
+    margin: 18px auto;
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.appointment__desc {
+    width: 617px;
+    color: #575f66;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.appointment__btn {
+    margin-top: 38px;
 }
